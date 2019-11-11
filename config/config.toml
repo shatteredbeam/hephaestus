@@ -1,0 +1,23 @@
+# Key used in the 'Authorization' header for uploading an image to the database via POST.  Generate your own secure
+# random string, token, or password.  the key item may also be commented out to use Read-only mode.
+[upload]
+key = "7NS64YvFOjEOP0OKneL7Z3s23za1aQbdCK2BDwnypLE"
+
+# Use 0.0.0.0 to bind to all addresses.
+[network]
+ip = "0.0.0.0"
+port = 9001
+
+# SQLite database file path
+[database]
+database = 'db\database.db'
+
+# Log file path.
+# You MAY omit this by commenting out the file value.  Logs will only be sent to console.
+[log]
+file = 'logs\hephlog.log'
+
+# Temporary file directory.  This is where buffered images are reconstructed, if needed in the case of large uploads or
+# greater than 5mb images.  Files are deleted and managed automatically, there is no need to clean this up manually.
+[temp]
+file = "temp\"
